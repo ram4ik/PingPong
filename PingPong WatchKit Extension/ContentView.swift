@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ContentView: View {
+    @State private var crownPosition = 0.0
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        GeometryReader { reader in
+            SpriteView(scene: PongScene(size: reader.size, crownPosition: $crownPosition))
+        }
     }
 }
 

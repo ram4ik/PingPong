@@ -15,6 +15,7 @@
 		95CC43072776273B00FB24E9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC43062776273B00FB24E9 /* ComplicationController.swift */; };
 		95CC43092776273C00FB24E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CC43082776273C00FB24E9 /* Assets.xcassets */; };
 		95CC430C2776273C00FB24E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CC430B2776273C00FB24E9 /* Preview Assets.xcassets */; };
+		95CC431C2776275F00FB24E9 /* PongScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC431B2776275F00FB24E9 /* PongScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		95CC43082776273C00FB24E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95CC430B2776273C00FB24E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95CC430D2776273C00FB24E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CC431B2776275F00FB24E9 /* PongScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				95CC43082776273C00FB24E9 /* Assets.xcassets */,
 				95CC430D2776273C00FB24E9 /* Info.plist */,
 				95CC430A2776273C00FB24E9 /* Preview Content */,
+				95CC431B2776275F00FB24E9 /* PongScene.swift */,
 			);
 			path = "PingPong WatchKit Extension";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CC431C2776275F00FB24E9 /* PongScene.swift in Sources */,
 				95CC43032776273B00FB24E9 /* ContentView.swift in Sources */,
 				95CC43052776273B00FB24E9 /* PingPongApp.swift in Sources */,
 				95CC43072776273B00FB24E9 /* ComplicationController.swift in Sources */,
