@@ -14,6 +14,8 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { reader in
             SpriteView(scene: PongScene(size: reader.size, crownPosition: $crownPosition))
+                .focusable()
+                .digitalCrownRotation($crownPosition)
         }
     }
 }
