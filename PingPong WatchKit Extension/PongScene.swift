@@ -58,12 +58,25 @@ final class PongScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)
-        
+
         if ball.position.x <= leftPaddle.position.x {
-            scored(winner: .right)
+          scored(winner: .right)
         } else if ball.position.x >= rightPaddle.position.x {
-            scored(winner: .left)
+          scored(winner: .left)
         }
+
+        let newPosition = crownPosition
+
+        defer { previousCrownPosition = newPosition }
+
+        guard newPosition != previousCrownPosition else { return }
+
+        let offset = newPosition - previousCrownPosition
+        let y = paddleBeingMoved.position.y + offset
+
+        guard minPaddleY ... maxPaddleY ~= y else { return }
+
+        paddleBeingMoved.position.y = y
     }
 }
 
